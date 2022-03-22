@@ -36,6 +36,7 @@ def add_directory(directory: str) -> str:
     directories[directory] = []
     return 'Полка добавлена'
 
+
 def del_directory(directory: str) -> str:
     if directory not in directories.keys():
         return 'Такой полки не существует'
@@ -43,6 +44,7 @@ def del_directory(directory: str) -> str:
         return 'На полке есть документы, удалите их перед удалением полки'
     del directories[directory]
     return 'Полка удалена'
+
 
 while True:
     command = input('Введите команду:\n')
